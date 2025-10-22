@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif; 
+        /* Define a fonte padrão da página. 
+           Usa Arial, se não tiver usa Helvetica, senão qualquer fonte sem serifa */
+    }
+    a {
+        color: red; /* Cor padrão dos links: vermelho */
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
+        font-weight: bold; /* Deixa os links em negrito */
+    }
+    a:visited {
+        color: darkred; /* Cor do link depois de já ter sido visitado */
+    }
+    a:hover {
+        color: black; /* Quando o mouse passa em cima do link, a cor fica preta */
+        text-decoration: underline; /* Nesse momento ele também ganha sublinhado */
+    }
+    a:active {
+        color: yellow; /* Quando o link é clicado, fica amarelo */
+    }
+</style>
+<!-- Fim do estilo -->
+</head>
+
+<body>
+    <h1>Personalizando links</h1> <!-- Título principal da página -->
+    <ul> <!-- Lista não ordenada (usa bolinhas antes dos itens) -->
+        <li>
+            <!-- "a" é o link -->
+            <!-- "href" define o endereço -->
+            <!-- "target=_blank" faz abrir em uma nova aba -->
+            <a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a>
+        </li>
+
+        <li>
+            <a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a>
+        </li>
+
+        <li>
+            <a href="https://www.cursoemvideo.com" target="_blank">Site do CursoEmVideo</a>
+        </li>
+    </ul>
+</body>
+</html>

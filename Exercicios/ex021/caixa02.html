@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+      body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte usada no site */
+    background-color: dimgray; /* Cor de fundo cinza do site */
+}
+
+header {
+    width: 600px;              /* Largura fixa do cabeçalho */
+    background-color: white;   /* Cor de fundo branca */
+    padding: 10px;             /* Espaço interno */
+    margin: 10px;              /* Espaço externo */
+}
+
+h1 {
+    box-shadow: 3px 5px 5px 10px; /* Sombra aplicada ao título (valores: deslocamento X, deslocamento Y, blur, espalhamento) */
+}
+
+nav {
+    background-color: rgb(102, 102, 102); /* Cor de fundo cinza escuro do menu */
+    padding: 3px; /* Espaço interno */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486); /* Sombra do menu */
+}
+
+nav > a {
+    text-decoration: none;        /* Remove o sublinhado dos links */
+    color: rgb(255, 255, 255);    /* Cor do texto branco */
+    font-weight: bold;            /* Texto em negrito */
+    margin-right: 30px;           /* Espaço entre os links */
+    border-radius: 10px 0px;      /* Cantos arredondados (somente dois cantos) */
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384); /* Sombra em cada link */
+}
+
+nav > a:hover {
+    text-decoration: underline; /* Quando o mouse passa em cima, o link fica sublinhado */
+}
+
+main {
+    background-color: white;  /* Fundo branco do conteúdo principal */
+    padding: 10px;            /* Espaço interno */
+    margin: 10px;             /* Espaço externo */
+    border-radius: 20px;      /* Cantos arredondados */
+}
+
+article {
+    background-color: lightgray; /* Fundo cinza claro do artigo */
+    padding: 5px;                /* Espaço interno */
+}
+
+article > aside {
+    background-color: lightgray; /* Fundo cinza claro da barra lateral */
+}
+
+footer {
+    background-color: black; /* Fundo preto do rodapé */
+    color: white;            /* Texto branco */
+    text-align: center;      /* Centraliza o texto */
+    padding: 1px;            /* Espaço interno */
+    margin: 0px;             /* Remove margens externas */
+}
+
+footer > p {
+    margin: 7px; /* Espaço ao redor do parágrafo no rodapé */
+}
+
+div#bola {
+    height: 100px;            /* Altura da bola */
+    width: 100px;             /* Largura da bola */
+    background-color: white;  /* Fundo branco */
+    margin: 10px;             /* Espaço externo */
+    border-radius: 50%;       /* Transforma em círculo */
+}
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Meu site</h1>
+       <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+       </nav>
+    </header>
+    <main>
+        
+        <section id="assuntos">
+                <p>Esportes, Politicas e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, nam ea asperiores dignissimos est quos odio. Totam adipisci eos voluptatem, numquam repellat, sapiente, voluptatum vero in provident eveniet odio ab?</p>
+                <aside>
+                   <p>Artigo Escrito por Gabriel Oliveira</p>
+                </aside>  
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabriel Oliveira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
