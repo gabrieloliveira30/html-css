@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de Fundo</title>
+    <style>
+    div.quadrado {                         /* Seleciona toda <div> com a classe "quadrado" */
+
+      display: inline-block;             /* Faz os quadrados ficarem lado a lado, respeitando margens */    
+      border: 2px solid black;           /* Cria uma borda preta de 2px */
+      border-radius: 10px;               /* Arredonda levemente os cantos da borda */
+      background-color: lightgray;       /* Define o fundo cinza-claro */
+      width: 300px;                      /* Largura fixa de 300 pixels */
+      height: 300px;                     /* Altura fixa de 300 pixels */
+
+    }
+
+    div#q1 {
+
+      background-color: skyblue;
+
+    }
+
+    div#q2 {
+
+     background-image: linear-gradient(to bottom, yellow, red);
+
+
+    }
+
+    div#q3 {
+
+     background-image: url('ex00\magens/pattern001.png');
+
+    }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+
+    <div class="quadrado" id="q2"></div>
+
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
